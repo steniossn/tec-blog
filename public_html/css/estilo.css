@@ -1,0 +1,127 @@
+/* 
+    Created on : 28/06/2022, 01:13:06
+    Author     : stenio
+*/
+
+
+/*remover formatação padrão do navegador*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ededf2;
+}
+
+#cabecalho{
+    background: #f3d915;
+    padding: 15px;
+    text-align: center;
+}
+
+#menu{
+    padding: 5px;
+}
+
+#conteudo{
+    width: 920px;
+    /* pode ser usado de 1 a 4 valores, definindo  topo, laterais e fundo, usando auto ficara cetralizado*/
+    margin: 0 auto;
+}
+
+#postagens,#menu-lateral{
+    background: #ededf2;
+}
+
+#postagens{
+    width: 660px;
+    float: left;
+}
+
+#menu-lateral{
+    width: 240px;
+    float: right;
+}
+
+#rodape{
+    /* usado para limpar o fluxo dos elementos flutuantes */
+    clear: both;
+    padding: 15px;
+    background: activecaption;
+    text-align: center;
+}
+
+/*link padrao*/
+a{
+    padding: 5px 12px;
+    text-decoration: none;
+}
+/*link padrao não visto e visto*/
+a:link, a:visited{
+    color:#f3d915;
+}
+/*link evento mouse*/
+a:hover{
+    text-decoration: underline;
+}
+
+/*combinando id com seletores podemos formatar links de areas especificas*/
+#menu a:link, #menu a:visited{
+    color:#fff;
+}
+/*link evento mouse*/
+#menu a:hover{
+    background: white;
+    color: #a89907;
+    text-decoration: none;
+}
+
+
+
+/*link sendo clicado*/
+a:active{
+    
+}
+
+h1{
+    font-size: 2.5em;
+    color: #4e4e4e;
+}
+
+h2{
+    margin: 0px;
+    color: #f3d915;
+}
+h3{
+    padding: 5px;
+    background:#cfd5e1;   
+}
+
+.branco{
+    color: white;
+    background: #cfd5e1;
+}
+
+.postagem {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: white;
+    
+}
+
+.data-postagem{
+    font-size: 0.8em;
+    display: block;
+    padding-bottom:5px;
+}
+
+.menu-lateral{
+    padding: 10px;
+    background: white;
+    font-size: 0.8em;
+    /*margin para separar as divs */
+    margin-bottom: 20px;
+}
