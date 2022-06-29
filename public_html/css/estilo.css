@@ -10,6 +10,8 @@
     padding: 0px;
 }
 
+
+/*estrutura **************************************************************/
 body{
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,10 +43,7 @@ body{
     float: left;
 }
 
-#menu-lateral{
-    width: 240px;
-    float: right;
-}
+
 
 #rodape{
     /* usado para limpar o fluxo dos elementos flutuantes */
@@ -53,8 +52,10 @@ body{
     background: activecaption;
     text-align: center;
 }
+/*fim estrutura *******************************************************/
 
-/*link padrao*/
+/*formatar links da pagina*********************************************/
+
 a{
     padding: 5px 12px;
     text-decoration: none;
@@ -68,6 +69,8 @@ a:hover{
     text-decoration: underline;
 }
 
+/*fim formatar links pagina*********************************************/
+
 /*combinando id com seletores podemos formatar links de areas especificas*/
 #menu a:link, #menu a:visited{
     color:#fff;
@@ -78,8 +81,6 @@ a:hover{
     color: #a89907;
     text-decoration: none;
 }
-
-
 
 /*link sendo clicado*/
 a:active{
@@ -118,10 +119,51 @@ h3{
     padding-bottom:5px;
 }
 
+/*formatar menu do menu lateral************************************/
+
+#menu-lateral{
+    width: 240px;
+    float: right;
+}
+
 .menu-lateral{
-    padding: 10px;
+    padding: 10px auto;
     background: white;
     font-size: 0.8em;
     /*margin para separar as divs */
     margin-bottom: 20px;
 }
+
+/*formatar list*/
+li {
+    list-style-type: none;
+    padding-left: 20px;
+    
+}
+
+/*formatar link em um list*/
+ul a {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url("../imagens/menu.png") no-repeat left center;
+}
+
+/*acao de mouse em um list*/
+ul li a:hover{
+    /*mover o backgroud que contem uma img maior para criar efeito de troca de imagem*/
+    background-position: right;
+    text-decoration: none;
+    color: white;
+}
+
+ /*link padrao não visto e visto*/
+ul a:link, a:visited{
+    color:#000;
+}
+
+/*fim menu lateral**************************************************/
