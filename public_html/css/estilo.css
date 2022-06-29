@@ -150,13 +150,16 @@ ul a {
     height: 40px;
     text-indent: 40px;
     line-height: 40px;
-    background: url("../imagens/menu.png") no-repeat left center;
+    /*aqui foi usado um cor junto com a img por precaução caso a img não carregue (boa pratica)*/
+    background: #f4b036 url("../imagens/menu.png") no-repeat left center;
 }
 
 /*acao de mouse em um list*/
 ul li a:hover{
     /*mover o backgroud que contem uma img maior para criar efeito de troca de imagem*/
     background-position: right;
+    /* dar o efeito caso a img não carregue*/
+    background-color: #f17144;
     text-decoration: none;
     color: white;
 }
@@ -164,6 +167,20 @@ ul li a:hover{
  /*link padrao não visto e visto*/
 ul a:link, a:visited{
     color:#000;
+}
+
+/*marcar pagina selecionada no menu lateral */
+
+#novidades-menu-lateral .novidades a, 
+#populares-menu-lateral .populares a,
+#ultimas-postagens-menu-lateral .ultimas-postagens a,
+#recomendados-menu-lateral .recomendados a{
+        /*mover o backgroud que contem uma img maior para criar efeito de troca de imagem*/
+    background-position: right;
+    /* dar o efeito caso a img não carregue*/
+    background-color: #f17144;
+    text-decoration: none;
+    color: white;
 }
 
 /*fim menu lateral**************************************************/
